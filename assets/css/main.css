@@ -9,6 +9,7 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
+  overflow: scroll;
 }
 a {
   color: #e74c3c;
@@ -54,7 +55,7 @@ a:hover {
   border-radius: 0;
 }
 .btn-common {
-  background: #80c034;;
+  background: #80c034;
   color: #fff;
 }
 .btn-common:hover {
@@ -66,6 +67,7 @@ a:hover {
   text-align: center;
   font-size: 50px;
   padding-left: 8px;
+  transform: skewY(2deg);
 }
 .subtitle{
   text-align: center;
@@ -74,6 +76,7 @@ a:hover {
   position: relative;
   color: #4b4d4e;
   padding-left: 17px;
+  transform: skewY(2deg);
 }
 
 .subtitle2 {
@@ -83,6 +86,11 @@ a:hover {
   position: relative;
   color: #FFF;
   padding-left: 17px;
+  transform: skewY(2deg);
+}
+
+.subtitle-services{
+  transform: skewY(-2deg);
 }
 
 .navbar {
@@ -132,24 +140,34 @@ a:hover {
 }
 
 #hero-area {
- /* background: #34495e;*/
- background-image: url(../img/hero/itzappnaDevelopers.jpeg);
+ background-image: url(../img/hero/3.jpg);
  position: center;
  background-repeat: no-repeat;
  background-size: cover; 
  color: #fff;
-/* transform-origin: right bottom;
- transform: skewY(-3deg);*/
+ transform: skewY(-2deg);
+ -webkit-transform: skewY(-2deg);
+ -o-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+ border-bottom: 1px solid #eee;
+ margin-top: -2%;
+ padding-bottom: 100px;
+ -webkit-backface-visibility: hidden;
 }
+
 #hero-area .btn {
   margin-right: 20px;
 }
 #hero-area img {
   max-width: 100%;
+  transform: skewY(2deg);
 }
 #hero-area p {
   padding: 50px 0;
+  margin-left:5%;
+  transform: skewY(2deg);
 }
+
 #services h3 {
   margin-top: 0;
   font-size: 28px;
@@ -206,6 +224,7 @@ a:hover {
 #about {
   background: #34495e;
   color: #fff;
+  transform: skewY(2deg);
 }
 #about p {
   line-height: 30px;
@@ -215,6 +234,7 @@ a:hover {
 #contact {
   background: #f1f1f1;
    /*background-image: url(../img/hero/); */
+   transform: skewY(2deg);
 }
 #contact ::-webkit-input-placeholder {
   color: #ecf0f1;
@@ -348,7 +368,7 @@ a:hover {
 }
 
 .fontHacemos{
-  font-size: 17px;
+  font-size: 1.4em;
   text-align: justify;
 }
 
@@ -433,12 +453,14 @@ a:hover {
 
 .titleTeam{
   padding-left: 15px;
+  transform: skewY(-2deg);
 }
 
 .imgTeam{
   max-width: 300px;
   margin-left: auto;
   display: block;
+  transform: skewY(2deg);
 }
 
 
@@ -450,4 +472,58 @@ a:hover {
 
 .colorIcon{
   color:#2A2A2A;
+}
+
+#imgAngle{
+  transform: skewY(2deg);
+}
+
+#services{
+  width:100%;
+  transform: skewY(2deg);
+}
+
+.angleAling{
+  transform: skewY(-2deg);
+  width: 87%;
+}
+
+.alingImg{
+  padding-bottom: 6%;
+}
+
+.position1{
+  padding-right: 40px;
+  padding-top: 18px;
+}
+
+.position2{
+  padding-bottom: 40px; 
+}
+
+.angleabout{
+    transform: skewY(-2deg);
+}
+
+.title-services{
+  text-align: center;
+  font-size: 50px;
+  padding-left: 8px;
+  transform: skewY(-2deg);
+}
+
+.title-team{
+  transform: skewY(-2deg);
+}
+
+.title-contact{
+  transform: skewY(-2deg);
+}
+
+.aling-service{
+  top: -20px;
+}
+
+.aling-plain{
+  top: -6px;
 }
